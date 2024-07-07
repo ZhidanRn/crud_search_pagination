@@ -1,5 +1,9 @@
 import CreateForm from "@/components/CreateForm"
 
+export const metadata = {
+    title : "Create Contact"
+}
+
 const CreateContactPage = () => {
     return (
         <div className="max-w-md mx-auto mt-5">

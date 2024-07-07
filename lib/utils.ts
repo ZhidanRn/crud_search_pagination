@@ -1,10 +1,14 @@
 export const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
-    const formatter = new Intl.DateTimeFormat("id-ID", {
-        dateStyle: "medium",
-        timeStyle: "short",
-    })
-    return formatter.format(date);
+    const options = {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Asia/Jakarta',
+    };
+    return date.toLocaleString('id-ID', options);
 }
 
 export const generatePagination = (currentPage: number, totalPages: number) => {

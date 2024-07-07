@@ -6,6 +6,10 @@ import { getContactsPages } from "@/lib/data";
 import { Tableskeleton } from "@/components/Skeleton";
 import { Suspense } from "react";
 
+export const metadata = {
+    title: "Contacts",
+}
+
 const Contact = async ({
     searchParams
 }:{
